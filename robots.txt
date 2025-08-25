@@ -1,4 +1,27 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.com/sitemap.xml
+# Sitemap location
+Sitemap: https://ductless-mini-splits-cedarburg.com/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Allow access to CSS and JS files
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow any admin or private directories (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /backup/
+
+# Disallow common files that shouldn't be indexed
+Disallow: *.log
+Disallow: *.tmp
+Disallow: *.bak
+
+# Allow all service and location pages
+Allow: /services/
+Allow: /locations/
